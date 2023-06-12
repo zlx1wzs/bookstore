@@ -70,7 +70,8 @@ import com.example.bookstore.generator.service.CouponService;
     }
         @ApiOperation(value = "查询所有记录")
     @RequestMapping(method = RequestMethod.POST,value = "/list")
-    public Result list(  ){
+    public Result list(@RequestBody String id ){
+            System.out.println("id"+id);
     Result result = new Result();
     result.success("获取list成功");
     result.setData(couponService.list());
