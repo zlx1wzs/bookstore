@@ -37,7 +37,7 @@ public class MysqlGenerator {
     /**
      * 数据库表名，支持多个，用,隔开
      */
-    private static final String bean = "coupon";
+    private static final String bean = "pictures";
     /**
      * 数据库
      */
